@@ -12,7 +12,7 @@ int sayı2=34;
 
 /* burası sonsuz deneme yazma yeridir
 
-         */
+       max value komtunu görmüş olduk  */
 
 
 
