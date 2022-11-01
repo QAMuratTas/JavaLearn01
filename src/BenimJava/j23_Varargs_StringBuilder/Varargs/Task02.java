@@ -11,7 +11,8 @@ Girilen ilk sayı hariç diğrelerini toplayan ve toplam ile ilk sayıyı çarpa
 int arrTop[] ={24,23,38,38,21,59,26,10};
         System.out.println("toplaCarp(2,arrTop) = " + toplaCarp(2, arrTop));
 
-
+int den[]={3,25,1};
+        System.out.println("toplaCarp(2,den) = " + toplaCarp(2, den));
     }//main sonu
 
     public static  int toplaCarp(int carpilacakSayi,int... toplanacakSayilar){
