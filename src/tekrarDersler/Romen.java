@@ -13,7 +13,7 @@ public class Romen {
 		   		M + [C M] + [X L] + V   ---->   1945
 		   		The chars in the brackets are in ascending order. (C-100, M-1000) ---> [C M]=900
 		*/
-        System.out.println(convertRomans("MCMXLV"));
+        System.out.println(convertRomans("VI"));
     }
 
     static int convertRomans(String s) {
