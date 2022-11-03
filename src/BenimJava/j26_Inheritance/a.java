@@ -1,2 +1,4 @@
-package BenimJava.j26_Inheritance;public class a {
+package BenimJava.j26_Inheritance;
+
+public class a {
 }
