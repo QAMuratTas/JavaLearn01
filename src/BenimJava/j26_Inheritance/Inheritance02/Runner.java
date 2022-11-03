@@ -12,11 +12,14 @@ public class Runner {
         System.out.println("k1.d = " + k1.d);
         System.out.println("k1.m = " + k1.m);
 
-        Mammal k2=new Kedi("a");
+       // Mammal k2=new Kedi("a");
+        System.out.println("class method");
         Mammal k3 =new Kedi();
-        Hayvancık k4=new Kedi();
+        System.out.println("k3.ma");
+        k3.mC();
+        //Hayvancık k4=new Kedi();
 
-        Mammal m1 =new Mammal();
+        //Mammal m1 =new Mammal();
     }
 
 }
