@@ -9,6 +9,13 @@ int sayı2=34;
         System.out.println("Integer.MAX_VALUE = " + Integer.MAX_VALUE);
         int temp=sayı1;
 
+        StringBuilder sb=new StringBuilder("0123456789");
+        sb.delete(2,8);
+
+        sb.append ("-").insert(2, "+");
+        System.out.println("sb = " + sb);
+
+
 
 /* burası sonsuz deneme yazma yeridir
 
