@@ -7,6 +7,7 @@ public class Runner {
         System.out.println("A.mesaj = " + A.mesaj);// A class ile. Static ler class ismiyle çağrılır
 
         B b=new B();
+        System.out.println("a.mesaj = " + a.mesaj);
         System.out.println("b.mesaj = " + b.mesaj);
 
 
