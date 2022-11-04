@@ -20,7 +20,8 @@ public class Kedi extends Mammal {//Mammal parent class Mammal child class-torun
     int d = 5;
 
     @Override
-    public void mC() {//Mammal parent Den ezen method
+    public void mC()
+    {//Mammal parent Den ezen method
         System.out.println(" mC - > Kedi  class meth call.");
     }
 }// Class sonu

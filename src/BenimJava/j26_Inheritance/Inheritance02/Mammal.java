@@ -3,14 +3,14 @@ package BenimJava.j26_Inheritance.Inheritance02;
 public class Mammal extends Hayvancık {//hayvancık parent class in child class-baba
 
     public Mammal() {//psiz cons
-        this('Y');
+        this('Y');// bu class ın p li cons call edildi
         System.out.println("Ağam bu MAMMAL p siz cons");
 
 
     }
 
     public Mammal(char c) {//p li cons
-        super(17);
+        super(17);//parent hayvancık class p li cons call edildi
         System.out.println("Ağam bu MAMMAL p li cons");
 
 
