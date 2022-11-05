@@ -36,4 +36,11 @@ public class Okul {
     public void setOgrenciler(ArrayList<Ogrenci> ogrenciler) {
         this.ogrenciler = ogrenciler;
     }
+
+    @Override
+    public String toString() {
+        return "Okul{" +
+                "okulAd='" + okulAd + '\'' +
+                '}';
+    }
 }
