@@ -11,7 +11,7 @@ public class Banka {
 
         try {
             Account account1 = new Account();
-            account1.deposit(100000);
+            account1.deposit(1000);
             System.out.println("account1.balance = " + account1.getBalance());
             account1.withdraw(500);
             System.out.println("account1.balance = " + account1.getBalance());
@@ -21,7 +21,7 @@ public class Banka {
             account1.withdraw(6000);
 
         } catch (Exception ex) {
-            System.out.println(ex.getMessage());
+            System.out.println("exception mesaj "+ex.getMessage());
         }
     }
 }

@@ -34,8 +34,10 @@ public class OkulMain {
 
         } while (ogrenciSayisi <= okul1.getMaxOgrenciSayisi());
 
+        System.out.println("okul1.getOgrenciler() = " + okul1.getOgrenciler());
         for (Ogrenci ogr : okul1.getOgrenciler()) {
-            System.out.println("ogr = " + ogr+"Okul Adı ="+okul1);//mrt...
+            System.out.println("ogr = " + ogr + " Okul Adı =" + okul1);//mrt...
         }
     }
+
 }

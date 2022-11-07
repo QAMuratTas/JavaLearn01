@@ -16,11 +16,14 @@ public class Tasktekrar01 {
     }
 
     private static void strbirlestir(String... arr) {
-String birles="";
-        for (String w:arr) {
 
-           birles=birles.concat(w);
+       String birlesen="";
+        for (String str: arr) {
+            birlesen += str;
         }
-        System.out.println("birlesen stirng = " + birles);
+        System.out.println("birlesen = " + birlesen);
+
     }
+
+
 }
