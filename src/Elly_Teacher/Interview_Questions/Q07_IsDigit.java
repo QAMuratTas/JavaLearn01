@@ -1,5 +1,6 @@
 package Elly_Teacher.Interview_Questions;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Q07_IsDigit {
@@ -14,5 +15,30 @@ public class Q07_IsDigit {
      Integer.valueOf()
     */
 
+    public static void main(String[] args) {
+      String str = "J4\\/4 1$ 34$¥" ;
 
+isDigit(str);
+
+
+
+
+    }
+
+    private static void isDigit(String str) {
+        int sum =0;
+        for (int i = 0; i <str.length() ; i++) {
+
+
+            if (Character.isDigit(str.charAt(i))) {
+
+
+                sum+=Integer.parseInt(String.valueOf(str.charAt(i)));// önce char at i Stringe çevirdi. daha sonra parse int ile integer a çevirdi.
+
+            }
+
+        }
+        System.out.println("sum = " + sum);
+
+    }
 }

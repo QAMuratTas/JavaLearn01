@@ -13,12 +13,12 @@ public class Q03_PrimeNumber {
         Scanner scan = new Scanner(System.in);
         System.out.println("bir sayı Giriniz");
         int sayi =scan.nextInt();
-        Math.abs(sayi);
+        int a =Math.abs(sayi);
         boolean flag=true;
 
-        if (sayi>=2){
-            for (int i = 2; i <sayi ; i++) {
-                if (sayi%i==0){
+        if (a>=2){
+            for (int i = 2; i <a ; i++) {
+                if (a%i==0){
                     flag=false;
                     break;
                 }

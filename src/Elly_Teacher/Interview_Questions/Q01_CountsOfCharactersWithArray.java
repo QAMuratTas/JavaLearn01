@@ -18,7 +18,7 @@ public class Q01_CountsOfCharactersWithArray {
         System.out.print("Bir string giriniz :");
         String str = sc.nextLine();
         //split
-        String [] arr = str.split("");//her bir karakteri ayırdık
+        String[] arr = str.split("");//her bir karakteri ayırdık
         System.out.println(Arrays.toString(arr));
         // sor()
         Arrays.sort(arr);
@@ -27,21 +27,20 @@ public class Q01_CountsOfCharactersWithArray {
         int count = 0;
         // karakterleri karşılaştırmak için for loop
 
-        for (int i = 1; i <arr.length ; i++) {
-            if (arr[i-1].equals(arr[i])){// birden fazla karakter içim
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i-1].equals(arr[i])) {// birden fazla karakter içim
                 count++;
-            }else {
-                System.out.println(arr[i]+ " sayısı "+ (count+1));
-                count=0;
+            } else {
+                System.out.println(arr[i-1] + " sayısı " + (count + 1));
+                count = 0;
             }
 
-if(i==arr.length-1){// en son karakter benzersiz ise için çalışır
-    System.out.println(arr[i]+ " sayısı "+ (count+1));
+            if (i == arr.length - 1) {// en son karakter benzersiz ise için çalışır
+                System.out.println(arr[i] + " sayısı " + (count + 1));
 
-}
+            }
 
         }
-
 
 
     }

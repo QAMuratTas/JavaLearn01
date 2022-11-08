@@ -17,7 +17,7 @@ public class Q06_FrequencyWithStringVaalueOf {
                   }
               }
               if(!strOutput.contains(String.valueOf(str.charAt(i)))){ //char olan karakteri String e donsuturduk
-                  strOutput += "" + str.charAt(i)  + counter +  " ";
+                  strOutput += "" + str.charAt(i)  + counter +  "-";
               }
           }
           System.out.println(strOutput);
