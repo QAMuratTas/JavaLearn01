@@ -2,7 +2,7 @@ package BenimJava.j29_Expections;
 
 import java.util.Scanner;
 
-public class C_ArithmeticExpection {
+public class C01_ArithmeticExpection {
     public static void main(String[] args) {
 // arithmetic expection -> matematiksel işlemlerde oluşan runtime expection dur.
         String str = "";
