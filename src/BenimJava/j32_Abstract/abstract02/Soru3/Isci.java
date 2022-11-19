@@ -1,4 +1,4 @@
-package BenimJava.j32_Abstract.abstract02;
+package BenimJava.j32_Abstract.abstract02.Soru3;
 
 public class Isci extends Personel{// abs personel parent class a extends -> concrete child işçi class
     @Override

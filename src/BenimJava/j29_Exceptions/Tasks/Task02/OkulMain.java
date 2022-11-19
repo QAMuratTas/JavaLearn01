@@ -43,5 +43,12 @@ public class OkulMain {
         okulList.add(okul);
 
         System.out.println(okulList.toString()); // okul listini, içindeki ogrenci listi ile beraber yazdırır.
+
+
+    String str ="ae";
+    str.valueOf(str.charAt(0));
+
+
+
     }
 }

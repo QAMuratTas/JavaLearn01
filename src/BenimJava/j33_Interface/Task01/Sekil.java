@@ -1,0 +1,7 @@
+package BenimJava.j33_Interface.Task01;
+
+public interface  Sekil {
+    double PI=3.14; // final static variable
+    int cevre (int... boyut);//varargs parametreli abs method->implemeeee...
+    int alan(int...boyut);//varargs parametreli abs method->implemeee...
+}

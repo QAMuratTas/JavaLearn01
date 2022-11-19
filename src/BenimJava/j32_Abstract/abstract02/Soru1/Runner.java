@@ -1,4 +1,4 @@
-package BenimJava.j32_Abstract.abstract02.Soru;
+package BenimJava.j32_Abstract.abstract02.Soru1;
 
 public class Runner {
     public static void main(String[] args) {

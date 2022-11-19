@@ -1,4 +1,4 @@
-package BenimJava.j32_Abstract.abstract02;
+package BenimJava.j32_Abstract.abstract02.Soru3;
 
 public class IdariPersonel extends Personel{
     @Override// mecbur implement edilmeli
