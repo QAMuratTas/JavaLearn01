@@ -65,7 +65,7 @@ public class C01_Iterators {
         System.out.println("iterator öncesi l2 : " + l2);//[Baran, Gülsüm, Akif, Nazım]
         Iterator<String> it2 = l2.iterator();
         while (it2.hasNext()) {//tekraradaki pointer önünde eleman varlığının kontrol eder
-            it2.next();//tekrardaki pointer öünüdeki elemanı verir
+            it2.next();//tekrardaki pointer önünüdeki elemanı verir
             it2.remove();// next() ilen  gelen elemanı siler
 
         }
@@ -93,7 +93,7 @@ public class C01_Iterators {
         ListIterator<String> ebikGabık = l3.listIterator();//tekrar iterator yapısı tanımlandı
 
         while (ebikGabık.hasNext()) {
-            ebikGabık.set(ebikGabık.next().toUpperCase().charAt(0) + "***");//next()ilen l4 elamanbı ilk harf byk kalan 3 harf*** le set edildi
+            ebikGabık.set(ebikGabık.next().toUpperCase().charAt(0) + "***");//next()ilen l4 elamanı ilk harf byk kalan 3 harf*** le set edildi
             ebikGabık.add(l4.toString());//tekrardaki updatebedilen l3 e l4 add edildi
         }
 

@@ -3,7 +3,7 @@ package BenimJava.j12_Loops.L01_ForLoop.L02_WhileLoop.Tasks;
 public class taskx {
     public static void main(String[] args) {
         /*
-        //Task01
+        //Task01_ok
         int sum = 0;
         int adet = 0;
 
@@ -16,7 +16,7 @@ public class taskx {
         }
         System.out.println("Girilen sayı adedi: "+adet+"\nToplam : "+sum);
 
-//Task02
+//Task02_ok
         Scanner scan = new Scanner(System.in);
         System.out.println("bir tamsayı giriniz: ");
         int a=scan.nextInt();

@@ -57,7 +57,7 @@ en sona getirilmeli ...
     ListIterator -> b<->s ileri ve geri çift yönlü tekrarlar.
 
     ITERATOR ->kapsamı geniş ama aksiyonu az
-    ListIterator -> kapsamı dar ama aksiyonu ço
+    ListIterator -> kapsamı dar ama aksiyonu çok
 
 
  */
@@ -69,6 +69,7 @@ en sona getirilmeli ...
         while(d.hasNext()){
 
             d.next();
+
             System.out.println("d.nextIndex() = " + d.nextIndex());
         }
 

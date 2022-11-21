@@ -20,7 +20,7 @@ public class Ex01 {
 }
 
     /*
-          Task01
+          Task01_ok
              girilen bir sayının negatif ve pozitifliğini kontrol eden code create ediniz..
            */
 
