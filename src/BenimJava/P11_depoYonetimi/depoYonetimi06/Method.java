@@ -106,8 +106,8 @@ public class Method implements GirisCikisInterface {
 
         int arananId=scan.nextInt();
 
-        if(Character.isDigit(arananId)){
-            if(urunler.keySet().contains(arananId)) {
+       //if(!Character.isDigit(arananId)){//! işareti koyduk *** gereksiz olmuş ***
+            if(urunler.containsKey(arananId)) {
 
                 System.out.println("Guncel miktarinizi giriniz");
                 int guncelMik = scan.nextInt();
@@ -115,8 +115,8 @@ public class Method implements GirisCikisInterface {
 
             }else{
                 System.out.println("aradiniz urun yok");
-            }
-        }}
+            }}
+
 
 
     private static void rafaKoy() {
@@ -143,8 +143,11 @@ public class Method implements GirisCikisInterface {
 
             System.out.println("Guncel miktarinizi giriniz");
             int guncelMik = scan.nextInt();
-            urunler.get(arananId).setMiktar(urunler.get(arananId).getMiktar()-guncelMik);
+            if (urunler.get(arananId).getMiktar()>0 && !(urunler.get(arananId).getMiktar()<guncelMik)) {//*** miktar olarak hiç yoksa çıkış yapılamaz uyarısı
 
+
+                urunler.get(arananId).setMiktar(urunler.get(arananId).getMiktar() - guncelMik);
+            }else System.out.println("Ağam olmayan yada olandan fazla ürün çıkartmaya zorluyorsun");
         }else{
             System.out.println("aradiniz urun yok");
         }
