@@ -16,7 +16,7 @@ public class C01_ForEachLoop {
         for (int i = 0; i <sayiList.size() ; i++) {
             System.out.println("sayiList.get(i) = " + sayiList.get(i));
 
-            System.out.println("hello world");
+
         }
         for (Integer a:sayiList) {
             System.out.println(a + " ");
