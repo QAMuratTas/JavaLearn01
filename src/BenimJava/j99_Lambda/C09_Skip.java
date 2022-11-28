@@ -1,4 +1,4 @@
-package BenimJava.j99_Lambda.Lambda_Library;
+package BenimJava.j99_Lambda;
 
 import java.util.ArrayList;
 import java.util.Arrays;
