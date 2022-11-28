@@ -60,8 +60,15 @@ alfBkTkszPrint(menu);
 
 
         menu.stream().sorted(Comparator.comparing(t->t.toString().charAt(t.toString().length()-1)).reversed()).forEach(t-> System.out.print(t+" "));
-    }
-// Task : listin elemanlarin karakterlerinin cift sayili
+
+        // Task : listin elemanlarin karakterlerinin cift sayili
 // karelerini hesaplayan,ve karelerini tekrarsiz buyukten kucuge sirali  print ediniz...
+        System.out.println("");
+        menu.stream().map(t->t.length()*t.length()).filter(C01_LambdaExpression::ciftMi).distinct().sorted(Comparator.reverseOrder()).forEach((C01_LambdaExpression::yazdir));
+
+
+    }
+
+
 
 }
