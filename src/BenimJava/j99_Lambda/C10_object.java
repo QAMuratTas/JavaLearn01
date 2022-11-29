@@ -68,7 +68,7 @@ fields --> Universite (String)
     //task 03-->universite'lerde herhangi birinde "matematik" olup olmadigini  kontrol eden pr create ediniz.
     public static boolean enAzBirMatVarMi (List<Universite>unv){
 
-        return unv.stream().anyMatch(t->t.getBolum().toLowerCase().contains("matematik"));
+        return unv.stream().anyMatch(t->t.getBolum().toLowerCase().contains("matem"));
     }
     //task 04-->universite'leri ogr sayilarina gore b->k siralayiniz.
     public static List ogrSylSrla (List<Universite> unv){
