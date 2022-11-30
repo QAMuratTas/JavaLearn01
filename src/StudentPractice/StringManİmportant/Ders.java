@@ -1,5 +1,10 @@
 package StudentPractice.StringManİmportant;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class Ders {
     public static void main(String[] args) {
 String str ="JavaCAN & JavaTar";
@@ -7,6 +12,11 @@ method1ForLastIndex(str);
 method2ForFirstIndex(str);
 method3WhileSubstring(str);
 method4StrBuilder(str);
+method6StrArray(str);
+method8ByteArray(str);
+method7CharArray(str);
+method9ArrayList(str);
+method10Recursion(str);
 
 
 
@@ -43,5 +53,46 @@ method4StrBuilder(str);
         StringBuilder sb = new StringBuilder(str);
         System.out.println("StringBuilder ile "+sb.reverse());
     }
+    private static void method6StrArray(String str) {
+        String[] strArray = str.split("");
+        System.out.print("String Array ile ");
+        for(int i= strArray.length-1; i>=0; i--) {
+            System.out.print(strArray[i]);
+        }
+        System.out.println();//dummy
+    }
+    private static void method7CharArray(String str) {
+        char[] charArray = str.toCharArray();
+        System.out.print("Char Array ile ");
+        for(int i= charArray.length-1; i>=0; i--) {
+            System.out.print(charArray[i]);
+        }
+        System.out.println();//dummy
+    }
+    private static void method8ByteArray(String str) {
+        byte[] bytes = str.getBytes();
+        System.out.println("Stringimizin son hali: "+ Arrays.toString(bytes));
 
+        for(int l=0, r=str.length()-1; l<r; l++, r--) {
+            byte temp= bytes[l];
+            bytes[l] = bytes[r];
+            bytes[r] = temp;
+        }
+        System.out.println("Byte Array ile "+new String(bytes));
+    }
+    private static void method9ArrayList(String str) {
+        ArrayList<String> list = new ArrayList<String>(List.of(str.split("")));
+        Collections.reverse(list);
+        System.out.println("ArrayList ile "+list);
+
+        String[] array = list.toArray(new String[0]);
+        System.out.println("ArrayList ile "+String.join("", array));
+        //System.out.println("ArrayList ile "+String.join("!", array));
+    }
+    private static void method10Recursion(String str) {
+        if(!str.isEmpty()) {
+            System.out.print(str.charAt(str.length() - 1));
+            method10Recursion(str.substring(0, str.length() - 1));
+        }else System.out.println();//dummy
+    }
 }
