@@ -1,9 +1,8 @@
 package StudentPractice.StringManİmportant;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Ders {
     public static void main(String[] args) {
@@ -94,5 +93,24 @@ method10Recursion(str);
             System.out.print(str.charAt(str.length() - 1));
             method10Recursion(str.substring(0, str.length() - 1));
         }else System.out.println();//dummy
+    }
+    private static void method11Stack(String str) {
+        Stack<Character> stack = new Stack<Character>();
+        char[] ch = str.toCharArray();
+        for(int i = 0; i < ch.length; i++){
+            stack.push(ch[i]);
+        }
+        int i = 0;
+        while(!stack.isEmpty()) {
+            ch[i++] = stack.pop();
+        }
+        System.out.println("Stack ile "+String.copyValueOf(ch));
+        System.out.println("Stack ile "+new String(ch));
+    }
+    private static void method12Lambda(String str) {
+        System.out.println("Lambda ile "+ Stream.of(str).map(t -> t.split("")).flatMap(Arrays::stream).reduce("", (s, c) -> c + s));
+        System.out.println("Lambda ile "+str.chars().mapToObj(ch -> Character.toString(ch)).reduce("", (s, c) -> c + s));
+        System.out.println("Lambda ile "+str.chars().mapToObj(Character::toString).reduce("", (s, c) -> c + s));
+        System.out.println("Lambda ile "+Stream.of(str).map(t -> new StringBuilder(t).reverse()).collect(Collectors.joining()));
     }
 }
