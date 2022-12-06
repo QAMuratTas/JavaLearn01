@@ -1,9 +1,6 @@
 package Elly_Teacher.LambdaLive;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class C1_İntList {
@@ -20,7 +17,55 @@ public class C1_İntList {
         System.out.println(son5basDegil(list));
         System.out.println("topla(list) = " + topla(list));
         System.out.println("negatifKareList(list) = " + negatifKareList(list));
+        System.out.println("bestenBuyuksayi(list) var mı?= " + bestenBuyuksayi(list));
+        System.out.println("tumElSifirdanKcukMu(list) = " + tumElSifirdanKcukMu(list));
+        System.out.println("yuzeEsitElemanYokMu(list) = " + yuzeEsitElemanYokMu(list));
+        System.out.println("sifiraEsitElYokMu(list) = " + sifiraEsitElYokMu(list));
+        System.out.println("ilkBesEleamnTopla(list) = " + ilkBesEleamnTopla(list));
+        System.out.println("sonBesElListele(list) = " + Arrays.toString(sonBesElListele(list)));
+
+    }// main sonu
+
+    private static Object[] sonBesElListele(List<Integer> list) {
+        return list.stream().skip(list.size()-5).toArray();
     }
+
+
+    // S16:  listenin ilk 5 elemanini topla? - limit(5)
+    private static Optional<Integer> ilkBesEleamnTopla(List<Integer> list) {
+       return list.stream().limit(5).reduce(Integer::sum);
+    }
+
+
+    // S15: listenin sifira esit elemani yok mu? - noneMatch
+    private static boolean sifiraEsitElYokMu(List<Integer> list) {
+        return list.stream().noneMatch(t->t==0);
+    }
+
+
+
+
+
+    // S14: listenin 100 e esit elemani yok mu ? -noneMatch
+    private static boolean yuzeEsitElemanYokMu(List<Integer> list) {
+      return   list.stream().noneMatch(t->t==100);
+    }
+
+    // S13 : listenin tum elemanlari sifirdan kucuk mu? -allMatch
+    private static boolean tumElSifirdanKcukMu(List<Integer> list) {
+
+        return list.stream().allMatch(t->t<0);
+    }
+
+
+
+
+    // S12 : listeden 5 den buyuk  sayi var mi? -anyMatch
+    private static boolean bestenBuyuksayi(List<Integer> list) {
+        return list.stream().anyMatch(t->t>5);
+
+    }
+
     // S10 :list elemanlarini toplamini bulalim
     private static int topla(List<Integer> list) {
         System.out.println();
@@ -36,11 +81,12 @@ public class C1_İntList {
     ardışık düzen içinde belirli bir noktadan geçerken görmek istediğiniz
     yerde hata ayıklamayı desteklemek için vardır . Ara islemdir.. yapilam islemi gormek icin kullanilir
      */
-    // S12 : listeden 5 den buyuk  sayi var mi? -anyMatch
-    // S13 : listenin tum elemanlari sifirdan kucuk mu? -allMatch
-    // S14: listenin 100 e esit elemani yok mu ? -noneMatch
-    // S15: listenin sifira esit elemani yok mu? - noneMatch
-    // S16:  listenin ilk 5 elemanini topla? - limit(5)
+
+
+
+
+
+
     // S17: listenin son bes elemaninin  listele -skip long
 // S9: list pozitif elemanlari icn karelerini bulup birler basamagi 5 olmayanlardan yeni bir list olusturalim
     private static  List<Integer> son5basDegil(List<Integer> list) {
