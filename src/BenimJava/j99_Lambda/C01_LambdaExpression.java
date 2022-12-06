@@ -108,6 +108,9 @@ public static void printElFunctional(List<Integer> sayi) {
 public static void yazdir(double a){// normal method tek aksiyonlu -> seed method (tohum)->refere edilecek method
     System.out.print(a+" ");
 }
+    public static void yazdirStr(String a){// normal method tek aksiyonlu -> seed method (tohum)->refere edilecek method
+        System.out.print(a+" ");
+    }
 
     public static void printElFunctional2(List<Integer> sayi) {//functional pr
         sayi.// aksiyona girecek list coll.
